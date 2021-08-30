@@ -4,7 +4,7 @@ export async function getServerSideProps({params}) {
     let galleryData;
     try {
         const response = await fetch(
-            `http://localhost:3001/api/v1/gallery`
+            `https://gallery-test.gpcoders.dev/api/v1/gallery`
         );
         galleryData = await response.json();
     } catch (e) {

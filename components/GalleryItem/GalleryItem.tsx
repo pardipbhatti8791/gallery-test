@@ -13,7 +13,7 @@ const GalleryItem: React.FC<GalleryItemProps> = ({ item }) => {
     return (
         <li>
             <div className="item">
-                <img src={`http://localhost:3001/api/v1/${item.imageUrl}`}/>
+                <img src={`https://gallery-test.gpcoders.dev/api/v1/${item.imageUrl}`}/>
             </div>
         </li>
     )

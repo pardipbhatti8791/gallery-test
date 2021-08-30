@@ -1,3 +1,3 @@
 export * from './store';
-export * as categoriesActionCreators from './blog/action-creators'
+export * as galleryActionCreators from './gallery/action-creators'
 export * from './rootReducer'

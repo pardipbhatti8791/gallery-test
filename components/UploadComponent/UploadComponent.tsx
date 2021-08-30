@@ -13,7 +13,7 @@ const UploadComponent: React.FC<UploadComponentProps> = ({ imageUrlFromServer, p
         if (data.target.files[0] !== undefined) {
             const formData = new FormData()
             formData.append("file", data.target.files[0])
-            const d = await uploadGallery(formData, page)
+            const d: any = await uploadGallery(formData, page)
             imageUrlFromServer(d.url)
         }
     }

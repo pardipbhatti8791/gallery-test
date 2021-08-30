@@ -35,9 +35,9 @@ export const uploadGallery = (
         type: ActionType.GALLERY_UPLOAD_INIT,
     });
     try {
-        const { data } = await service.post(apiUri.gallery.galleryUploadPost, formData);
+        const data: any = await service.post(apiUri.gallery.galleryUploadPost, formData);
         dispatch(listGallery(page))
-        return data
+        return data.data
     } catch (e) {
         dispatch({
             type: ActionType.GALLERY_UPLOAD_FAILED,

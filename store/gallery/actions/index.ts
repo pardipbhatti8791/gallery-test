@@ -20,7 +20,7 @@ interface ListGalleryInit {
 
 interface ListGallerySuccess {
     type: ActionType.GALLERY_LIST_SUCCESS;
-    payload: string[];
+    payload: any;
 }
 
 interface ListGalleryFailed {
@@ -33,7 +33,7 @@ interface UploadGalleryInit {
 }
 
 interface UploadGallerySuccess {
-    type: ActionType.GALLERY_LIST_SUCCESS;
+    type: ActionType.GALLERY_UPLOAD_SUCCESS;
 }
 
 interface UploadGalleryFailed {
